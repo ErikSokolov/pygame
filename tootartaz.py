@@ -33,7 +33,13 @@ class TicTacToe:
 		for y, row in enumerate(self.game_array):
 			for x, obj in enumerate(row):
 				if obj != INF:
-					self.game.screen.blit(self.X_image if obj else self.O_image, vec2(x, y) * CELL_SIZE)
+					if obj == 0:
+						image = self.O_image
+					elif obj == 1:
+						image = self.X_image
+					elif obj == 2:
+						image = self.foo_image
+					self.game.screen.blit(image, vec2(x,y)* CELL_SIZE)
 
 	def draw(self):
 		self.game.screen.blit(self.field_image, (0, 0))
