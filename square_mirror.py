@@ -20,9 +20,9 @@ while run:
 		player.move_ip(-1,0)
 	elif key[pygame.K_g] == True:
 		player.move_ip(1,0)
-	elif key[pygame.K_f] == True:
-		player.move_ip(0,-1)
 	elif key[pygame.K_d] == True:
+		player.move_ip(0,-1)
+	elif key[pygame.K_f] == True:
 		player.move_ip(0,1)
 
 	pygame.draw.rect(screen, (0, 0, 255), mirror_player)

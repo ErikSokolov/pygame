@@ -25,9 +25,9 @@ class TicTacToe:
 	def handle_keyboard_input(self, event):
 		if event.type == pygame.KEYDOWN:
 			if event.type == pygame.KEYDOWN:
-				if event.key == pygame.K_f and self.selected_cell[1] > 0:
+				if event.key == pygame.K_d and self.selected_cell[1] > 0:
 					self.selected_cell[1] -= 1
-				elif event.key == pygame.K_d and self.selected_cell[1] < 2:
+				elif event.key == pygame.K_f and self.selected_cell[1] < 2:
 					self.selected_cell[1] += 1
 				elif event.key == pygame.K_s and self.selected_cell[0] > 0:
 					self.selected_cell[0] -= 1

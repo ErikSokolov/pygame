@@ -44,9 +44,9 @@ while run:
 		ball_speed_x = -ball_speed_x
 
 	keys = pygame.key.get_pressed()
-	if keys[pygame.K_f] and paddle1_y > 0:
+	if keys[pygame.K_d] and paddle1_y > 0:
 		paddle1_y -= paddle_speed
-	if keys[pygame.K_d] and paddle1_y < SCREEN_HEIGHT - paddle_height:
+	if keys[pygame.K_f] and paddle1_y < SCREEN_HEIGHT - paddle_height:
 		paddle1_y += paddle_speed
 	if keys[pygame.K_k] and paddle2_y > 0:
 		paddle2_y -= paddle_speed
